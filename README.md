@@ -38,19 +38,7 @@ information from the sensor. The code for that is given by:
      between 36 and 48 (because the first coordinate is 3) and y coordinates 
      between 24 and 36 (because the second coordinate is 2).
     
-    DESCRIPTION OF VARIABLES:
     
-    |Variable| Description|
-    |--------|------------|
-    |myx | the x-coordinate where the sensor has evaluated (prone to some error)|
-    |myy | the x-coordinate where the sensor has evaluated (prone to some error)|
-    |value | either 0 or 1. 0 means the sensor has not sensed a white object. 1 means it has.|
-    |gridsize| the size of the squares that make up the map|
-    |myWidth| the number of columns in the map.|
-    |myHeight| the number of rows in the map.|
-    |offx| a variable that is used to determine where to draw the map. *You should not need to use this variable.*|
-    |offy| a variable that is used to determine where to draw the map. *You should not need to use this variable.*|
-
 
      */
 
@@ -63,6 +51,20 @@ information from the sensor. The code for that is given by:
     myMap[newX][newY][1]=(int)(value);
   }
   ```
+
+  DESCRIPTION OF VARIABLES IN ```MyMap```:
+    
+    |Variable| Description|
+    |--------|------------|
+    |myx | the x-coordinate where the sensor has evaluated (prone to some error)|
+    |myy | the x-coordinate where the sensor has evaluated (prone to some error)|
+    |value | either 0 or 1. 0 means the sensor has not sensed a white object. 1 means it has.|
+    |gridsize| the size of the squares that make up the map|
+    |myWidth| the number of columns in the map.|
+    |myHeight| the number of rows in the map.|
+    |offx| a variable that is used to determine where to draw the map. *You should not need to use this variable.*|
+    |offy| a variable that is used to determine where to draw the map. *You should not need to use this variable.*|
+
   After three minutes of this code your map may look something like this.
 
   
