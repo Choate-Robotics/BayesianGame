@@ -1,6 +1,10 @@
 # BayesianGame
 Processing sketches to simulate creating maps from noisy information channels.
 
+For more information about how to succeed. 
+
+[![Youtube Tutorial](https://img.youtube.com/vi/dHnxM7jMw6Y/0.jpg)](https://www.youtube.com/watch?v=dHnxM7jMw6Y)
+
 In this Processing sketch, we create a Field that has a number randomly 
 positioned boxes that may overlap. The Field is displayed on the left half
 of the display. There is also an MyMap object that is displayed on
