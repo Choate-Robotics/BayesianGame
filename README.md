@@ -2,9 +2,15 @@
 Processing sketches to simulate creating maps from noisy information channels.
 
 In this Processing sketch, we create a Field that has a number randomly 
-positioned boxes that may overlap. Then there is a Sensor object that 
-looks at random positions in the field and reports that it findings. The
-sensor is prone to error with the following issues:
+positioned boxes that may overlap. The Field is displayed on the left half
+of the display. There is also an MyMap object that is displayed on
+the right hand side of the display. The MyMap object a grid that displays the
+likelihood of there being an object in corresponding region of the Field.
+Initially the all areas of the MyMap object are set to a 20% chance of there
+being an object. There is a Sensor object that 
+looks at random positions in the Field and reports that it findings to the 
+MyMap object by calling its ```update``` method. The
+Sensor object is prone to error with the following issues:
 
 | Error type | Error strength|
 |------------|---------------|
@@ -12,13 +18,16 @@ sensor is prone to error with the following issues:
 |Error on negative sighting| 10% of the time falsely reports something|
 |Error on coordinates| Coordinates are wrong in both the x and y directions by a random error with standard deviation 5|
 
-Using this information the challenge is to build an ```update``` function within the ```MyMap``` class. The function currently there is the one that 
+Using this information your challenge is to rewrite the ```update``` function within the ```MyMap``` class. **Do not change other files other than the MyMap 
+file, and you will likely only need to work within the ```update``` function. Though you can add more class variables and helper functions the MyMap class if you like. 
+
+The function currently there is the one that 
 takes the information raw and sets the corresponding part of the map to the 
 information from the sensor. The code for that is given by:
 
 ```
  void update(int myx, int myy, float value) {
-    
+        
     /* THIS IS WHERE YOU PUT CODE.
     
     update takes in an x coordinate,  a y coordinate, and a value that  
@@ -28,7 +37,21 @@ information from the sensor. The code for that is given by:
      (because the third coordinate is 1) in the region defined by x coordinates
      between 36 and 48 (because the first coordinate is 3) and y coordinates 
      between 24 and 36 (because the second coordinate is 2).
-     
+    
+    DESCRIPTION OF VARIABLES:
+    
+    |Variable| Description|
+    |--------|------------|
+    |myx | the x-coordinate where the sensor has evaluated (prone to some error)|
+    |myy | the x-coordinate where the sensor has evaluated (prone to some error)|
+    |value | either 0 or 1. 0 means the sensor has not sensed a white object. 1 means it has.|
+    |gridsize| the size of the squares that make up the map|
+    |myWidth| the number of columns in the map.|
+    |myHeight| the number of rows in the map.|
+    |offx| a variable that is used to determine where to draw the map. *You should not need to use this variable.*|
+    |offy| a variable that is used to determine where to draw the map. *You should not need to use this variable.*|
+
+
      */
 
     int newX, newY;
