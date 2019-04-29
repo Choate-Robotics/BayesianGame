@@ -12,7 +12,10 @@ class MyMap extends Map {
 
 
   void update(int myx, int myy, float value) {
-    /* update takes in an x coordinate,  a y coordinate, and a value that  
+    
+    /* THIS IS WHERE YOU PUT CODE.
+    
+    update takes in an x coordinate,  a y coordinate, and a value that  
      is either 0.0 or 1.0. Your job is to update the map array. The array 
      contains a triple array of boxes that represent square 12x12 regions of 
      the field. E.g. map[3][2][1] is the probability that there IS SOMETHING THERE 
