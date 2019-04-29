@@ -1,7 +1,7 @@
 # BayesianGame
 Processing sketches to simulate creating maps from noisy information channels.
 
-For more information about how to succeed. 
+For more information about how to succeed. **Click on the picture below to see a YouTube about how to make a Bayesian estimator**.
 
 [![Youtube Tutorial](https://img.youtube.com/vi/dHnxM7jMw6Y/0.jpg)](https://www.youtube.com/watch?v=dHnxM7jMw6Y)
 
